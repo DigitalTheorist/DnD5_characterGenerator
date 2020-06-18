@@ -1,10 +1,11 @@
-class Wizard {
+public class Wizard {
     String hat; 
     String wand; 
     int intelligence; 
     int wisdom; 
 
     //Declare an array to hold the spells. 
+    //
     String[] spellBook = {
             "silence", 
             "charmSpell", 
@@ -15,11 +16,18 @@ class Wizard {
 
     //spellbook array...where do I put it to be most effective?
     //--------------------------------------------------------
-    //random number to call a spell from the spellbook
-    int spellRandomizer = (int) (Math.random() * 6);
-    //variable to hold the spell.
-    String spell = spellBook[spellRandomizer];
     
+    String spell;
+   
+        // constructor --------------------------------------
+
+        public Wizard() {
+            //random number to call a spell from the spellbook
+            int spellRandomizer = (int) (Math.random() * 6);
+             //variable to hold the spell.
+            this.spell = spellBook[spellRandomizer];
+        }
+
     void makeWizard() {
 
         System.out.println("I am born");
