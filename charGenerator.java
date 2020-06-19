@@ -12,18 +12,19 @@ public class charGenerator {
             //Wizard class output to command line
             System.out.println("My hat is " + gandalf.hat);
             System.out.println("My wand is " + gandalf.wand);
-
             System.out.println("My intelligence is " + gandalf.intelligence);
             System.out.println("My wisdom is " + gandalf.wisdom);
 
-            //Call the makeWizard method
+            //Call the methods in Wizard;
+            System.out.println("I am Gandalf!!!!");
             gandalf.makeWizard();
-            
-            System.out.println();
             gandalf.castSpell();
 
         Wizard merlin = new Wizard();
+        System.out.println("I am Merlin!!!!");
             merlin.makeWizard();
+            merlin.castSpell();
+
 
 
         //how do i call data from and object outside of the main class?
