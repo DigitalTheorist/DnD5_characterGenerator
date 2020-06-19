@@ -1,7 +1,4 @@
-
-
-
-
+//This generator holds the main class to generate the characters ~
 public class charGenerator {
     public static void main (String[] args) {
 
@@ -12,13 +9,14 @@ public class charGenerator {
             gandalf.intelligence = (int) ((Math.random() * 19) +5);
             gandalf.wisdom = (int) (Math.random() * 19);
 
+            //Wizard class output to command line
             System.out.println("My hat is " + gandalf.hat);
             System.out.println("My wand is " + gandalf.wand);
-           // System.out.println("My spellbook is " + gandalf.spellBook);
-           // System.out.println("My spell is " + spell);
+
             System.out.println("My intelligence is " + gandalf.intelligence);
             System.out.println("My wisdom is " + gandalf.wisdom);
-                //what methods can you put in classes? 
+
+            //Call the makeWizard method
             gandalf.makeWizard();
             
             System.out.println();
@@ -26,16 +24,16 @@ public class charGenerator {
 
         Wizard merlin = new Wizard();
             merlin.makeWizard();
-        
 
-                 
-          
 
-            
-                //how do i call data from and object outside of the main class?
-                //why is it printing the makeWizard call but not the warrior call?
-        Warrior groo = new Warrior(); 
-            groo.makeWarrior();         
-                
+        //how do i call data from and object outside of the main class?
+        //why is it printing the makeWizard call but not the warrior call?
+        Warrior groo = new Warrior();
+        groo.makeWarrior();
+
+
+
+
+
     }
 }
