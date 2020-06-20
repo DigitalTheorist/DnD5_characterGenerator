@@ -7,26 +7,34 @@ public class Wizard {
     int spellDmg;
 
     // This constructor holds a method for randomizing and assigning a spell called from the WizardSpells file
-        public Wizard() {
-             //variable to hold the spell.
+    void randomizeDmg() {
+
+    }
+
+    // TODO: 6/20/20 what is the difference between public Wizard and void makeWizard?? In that they
+    // TODO: 6/20/20 are both running code but how are they acting differently?? 
+    public Wizard() {
+             /*//variable to hold the spell.
             this.spell = WizardSpells.spellBook[WizardSpells.spellRandomizer];
              //variable to hold
-            this.spellDmg = damageGenerator.dmgRandomizer;
+            this.spellDmg = damageGenerator.wizDmg;*/
         }
-
-    // TODO: 6/18/20 why does public Wizard work above but spellDamage does not?
-    // TODO: 6/18/20 says "Return type required" of spelldamage - why? 
-
 
         void makeWizard() {
             System.out.println("I am born");
             System.out.println("my spellbook holds this spell...");
+
+            //variable to hold the spell.
+            this.spell = WizardSpells.spellBook[WizardSpells.spellRandomizer];
             System.out.println(spell);
+
+            //variable to hold
+            this.spellDmg = damageGenerator.wizDmg;
             System.out.println("The damage this spell will do is " + spellDmg);
         }
 
         void castSpell() {
-            System.out.println("I cast " + spell);
-            System.out.println("spell complete");
+            System.out.println("I shall cast " + spell);
+           // System.out.println("spell complete");
     }
 }
