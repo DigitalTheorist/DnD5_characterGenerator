@@ -18,14 +18,16 @@ public class charGenerator {
 
             //Call the methods in Wizard;
             System.out.println("I am Gandalf!!!!");
-            gandalf.makeWizard();
+
+            //gandalf.makeWizard();
             gandalf.castSpell();
 
             Wizard merlin = new Wizard();
             System.out.println("I am Merlin!!!!");
-            merlin.makeWizard();
-            mer lin.castSpell();
-            xxx
+
+            //merlin.makeWizard();
+            merlin.castSpell();
+
 
 
 
