@@ -5,9 +5,11 @@ public class damageGenerator {
     //  PRIOR to calling it so it will be a unique number each time.
     //public static damageGenerator wiz = new damageGenerator() {};
 
+
+    // TODO: 6/23/20 add multipliers called from weapons and spells.
     public static int spellDamage() {
         Random spellRand = new Random();
-        int dmgDoneBySpell = spellRand.nextInt(30);
+        int dmgDoneBySpell = spellRand.nextInt(30); //+ dmgModifer
         return dmgDoneBySpell;
     }
 
