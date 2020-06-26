@@ -16,6 +16,8 @@ public class charGenerator {
             System.out.println("My intelligence is " + gandalf.intelligence);
             System.out.println("My wisdom is " + gandalf.wisdom);*/
 
+
+
             //Call the methods in Wizard;
             System.out.println("I am Gandalf!!!!");
 

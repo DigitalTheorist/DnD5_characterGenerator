@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Wizard {
 
     // properties (variables that will be used for each instance of this class ie.
@@ -6,6 +8,7 @@ public class Wizard {
     String hat; 
     String wand;
     String spell;
+    String arcane;
     int intelligence; 
     int wisdom;
     int spellDmg;
@@ -21,6 +24,9 @@ public class Wizard {
             this.spell = WizardSpells.GetRandomSpell();
              //gets spell damage from damageGenerator.
             this.spellDmg = damageGenerator.spellDamage();
+            //gets a spell from the arcane spell book (ArrayList).
+            WizardSpells.inputArcane();
+            this.arcane = WizardSpells.RandomArcane();
         System.out.println("I am born");
         printStatus();
         String printSpellDmg = "The damage this spell will do is " + spellDmg;
@@ -32,6 +38,7 @@ public class Wizard {
     public void printStatus() {
         System.out.println("my spellbook holds this spell...");
         System.out.println(spell);
+        System.out.println(arcane);
     }
 
     public void castSpell() {
